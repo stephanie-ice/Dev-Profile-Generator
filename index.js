@@ -1,22 +1,22 @@
 console.log ("Yay, node is working!");
 
-var fs = require("fs");
-
 //find modules to do the heavy lifting for this app, and install them
-//FOUND: a package called pdf: https://www.npmjs.com/package/pdf
-//FOUND: maybe better package: https://www.npmjs.com/package/jspdf
 //USE: https://www.npmjs.com/package/github-scraper
 //USE: https://www.npmjs.com/package/inquirer
+var fs = require("fs");
+var inquirer = require("inquirer");
+var scraper = require("github-scraper");
+//FOUND: a package called pdf: https://www.npmjs.com/package/pdf
+//FOUND: maybe better package: https://www.npmjs.com/package/jspdf
 
-//key words github, profile, generator, scrape, PDF
-
-//module inquirer to prompt user ot input fav color, .then use that color for the PDF background
-//module inquirer to prompt user to input the github usernames desired
+//module: inquirer.js to prompt user ot input fav color, 
+//.then use that color for the PDF background
+//to prompt user to input the github usernames desired
 //var that takes username and creates URL
-//var that retrieves object of scraped info
-//object notation that specifies:
 
-//scrape github for:
+//module: profile.js that creates:
+//var that retrieves object of scraped info
+//object constructor that specifies:
     //username
     //icon or image
     //links listed on gitlab

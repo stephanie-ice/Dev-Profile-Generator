@@ -1,0 +1,29 @@
+{
+  "name": "dev-profile-generator",
+  "version": "1.0.0",
+  "description": "homework assignment",
+  "main": "index.js",
+  "dependencies": {
+    "github-scraper": "^6.8.0",
+    "inquirer": "^7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanie-ice/Dev-Profile-Generator.git"
+  },
+  "keywords": [
+    "github-scrape",
+    "pdf",
+    "profile-generator"
+  ],
+  "author": "Stephanie Ice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephanie-ice/Dev-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/stephanie-ice/Dev-Profile-Generator#readme"
+}
