@@ -1,12 +1,15 @@
 var inquirer = require("inquirer");
 
-//module: ask-user.js to prompt user ot input fav color, 
+
+
+//module: inquirer on ask-user.js to prompt user ot input fav color, 
 //.then use that color for the PDF background
 //to prompt user to input the github usernames desired
+
 //var that takes username and creates URL
 inquirer
   .prompt([
-    /* Pass your questions in here */
+    
     {type: input,
     message: "What is your favorite color?",
     name: "faveColor"
@@ -17,7 +20,16 @@ inquirer
     }
   ])
   .then(answers => {
-    // Use user feedback for... whatever!!
+    // user feedback to:
+    //var to store github usename
+    //take the user name and create a URL
+    //export that URL to 
+    //profile.js for the gs to get profile info
+
+    //user feedback for:
+    //var to store favorite color
+    //export that key, value to
+    //the PDFer.js for a background color
   });
 
 module.export

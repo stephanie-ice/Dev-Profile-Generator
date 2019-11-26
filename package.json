@@ -4,8 +4,10 @@
   "description": "homework assignment",
   "main": "index.js",
   "dependencies": {
+    "create-html": "^4.1.0",
     "github-scraper": "^6.8.0",
-    "inquirer": "^7.0.0"
+    "inquirer": "^7.0.0",
+    "jspdf": "^1.5.3"
   },
   "devDependencies": {},
   "scripts": {

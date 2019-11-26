@@ -1,5 +1,8 @@
+//module: gs on profile.js to scrape github for username profile info
+//return data as an object
+
 var gs = require("github-scraper");
-//var that retrieves object of scraped info
+//this is the var that retrieves object of scraped info
 var url = '/stephanie-ice' 
 gs(url, function(err, data) {
     console.log( 
@@ -20,6 +23,9 @@ gs(url, function(err, data) {
   
 });  
 
+//module: create-html on profile.js to take object data and turn it into 
+//a generated HTML document
+//https://www.npmjs.com/package/create-html
 
-//and export that data to the pdf-generator.js
-    module.export 
+//and export that data to thePDFer.js
+    module.export = gs()

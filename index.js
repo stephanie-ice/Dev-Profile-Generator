@@ -1,29 +1,27 @@
 console.log ("Yay, node is working!");
-
 //find modules to do the heavy lifting for this app, and install them
 //USE: https://www.npmjs.com/package/github-scraper
 //USE: https://www.npmjs.com/package/inquirer
+//USE: https://www.npmjs.com/package/create-html
+//USE: https://www.npmjs.com/package/jspdf
 var fs = require("fs");
 var inquirer = require("inquirer");
 var gs = require("github-scraper");
-//FOUND: a package called pdf: https://www.npmjs.com/package/pdf
-//FOUND: maybe better package: https://www.npmjs.com/package/jspdf
+var jspdf = require("jspdf");
 
-//module: ask-user.js to prompt user ot input fav color, 
-//.then use that color for the PDF background
+//module: inquirer on ask-user.js to prompt user ot input fav color, 
+//then use that color for the PDF background
 //to prompt user to input the github usernames desired
 
-//var that takes username and creates URL
-var url = '/jeremyepling' // a random username
-//module: profile.js that creates:
-//var that retrieves object of scraped info
-gs(url, function(err, data) {
-  console.log(data); // or what ever you want to do with the data
-})
+//module: gs on profile.js to scrape github for username profile info
+//return data as an object
 
+//module: create-html on profile.js to take object data and turn it into 
+//a generated HTML document
 
-  
+//module: jspdf on thePDFer.js to convert that HTML doc to a PDF
 
-//writeFile with above info to a PDF file in this folder
+//All of the above needs to be a function in index.js, 
+//where the arguments of the function are from the CLI:
 
-//??figure out how to make the PDF file styled and present the info the way you want.
+// node index.js "gitHubUserName" "faveColor"
